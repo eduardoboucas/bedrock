@@ -1,0 +1,39 @@
+// These atoms need to be loaded first
+@import 'atoms/typography';
+@import 'atoms/colours';
+
+// --------------------------------------------------------------
+// Breakpoints
+// --------------------------------------------------------------
+
+$breakpoints: (
+    'small': 320px,
+    'medium': 800px,
+    'large': 1280px
+);
+
+// --------------------------------------------------------------
+// Global rules
+// --------------------------------------------------------------
+
+body {
+    @include rem(font-size, $font-size-normal);
+    
+    font-family: $font-family-primary;
+    font-weight: $font-weight-light;
+    line-height: $line-height-normal;
+}
+
+// --------------------------------------------------------------
+// Width constrain
+// --------------------------------------------------------------
+
+$layout-max-width: 1024px;
+$layout-side-padding: 10px;
+
+.constrain {
+    max-width: $layout-max-width + (2 * $layout-side-padding);
+    padding-left: $layout-side-padding;
+    padding-right: $layout-side-padding;
+    margin: 0 auto;    
+}
