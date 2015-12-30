@@ -4,18 +4,18 @@
 
 ## Table of contents
 
-- 1. [Introduction](#user-content-1-introduction)
-- 2. [Core principles]()
-- 3. [Atomic design]()
-- 4. [HTML]()
-- 5. [CSS]()
-    - 5.1. [General principles]()
-    - 5.2. [Sass]()
-    - 5.3. [PostCSS]()
-    - 5.4. [Responsive web design]()
-- 6. [JavaScript]()
-- 7. [Other guidelines]()
-- 8. [Build tools]()
+- 1. [Introduction](#1-introduction)
+- 2. [Core principles](#2-core-principles)
+- 3. [Atomic design](#3-atomic-design)
+- 4. [HTML](#4-html)
+- 5. [CSS](#5-css)
+    - 5.1. [General principles](#51-general-principles)
+    - 5.2. [Sass](#52-sass)
+    - 5.3. [PostCSS](#53-postcss)
+    - 5.4. [Responsive web design](#54-responsive-web-design)
+- 6. [JavaScript](#6-javascript)
+- 7. [Other guidelines](#7-other-guidelines)
+- 8. [Build tools](#8-build-tools)
 
 ---
 
