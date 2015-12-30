@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-- 1. [Introduction]()
+- 1. [Introduction](#user-content-1-introduction)
 - 2. [Core principles]()
 - 3. [Atomic design]()
 - 4. [HTML]()
