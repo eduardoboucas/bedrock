@@ -77,7 +77,7 @@ To enforce principles of modularity and scope in the otherwise *unnamespaced* CS
 
 To enforce this philosophy and to ensure it properly protects elements against unwanted side effects, Bedrock promotes the following practices.
 
-##### 5.1.1. CSS selectors must contain only classes
+#### 5.1.1. CSS selectors must contain only classes
 
 > Strict BEM conventions require the sole use of class selectors. You start with a global reset, and then you use blocks to style everything on the page. In other words, adding a class to an element is the only way to style it, which means all styling is opt-in rather than de facto — [Phil Walton](http://philipwalton.com/articles/side-effects-in-css/)
 
@@ -114,7 +114,7 @@ nav a {
 }     
 ```
     
-##### 5.1.2. All blocks live in their own separate files
+#### 5.1.2. All blocks live in their own separate files
 
 This ensures that any developer not familiar with the codebase can instantly find all the styling related to a given element. By enforcing this naming convention for the files and keeping them all in the same directory, the operating system helps enforcing that no two blocks will have the same name, avoiding unwanted collisions of styling. The file should be named after the block (e.g. `_my-block.scss`).
 
@@ -122,11 +122,11 @@ This ensures that any developer not familiar with the codebase can instantly fin
 
 Sass is used exclusively with its SCSS syntax (`*.scss`), a superset of CSS3.
 
-##### 5.2.1. Don't nest selectors deeper than two levels
+#### 5.2.1. Don't nest selectors deeper than two levels
 
 Nesting on its own is enough to generate subject for a big debate, but the idea is that even though less experienced developers might be tempted to mimic the structure of the markup in the style sheets by nesting selectors accordingly, this breaks the principle of keeping concerns separate. Because nesting will generate increased specificity, it becomes really difficult to extend or override elements.
 
-##### 5.2.2. Avoid using `@extend`
+#### 5.2.2. Avoid using `@extend`
 
 Extending selectors in Sass sounds good on paper, but the reality is that it's far from ideal and it can cause some problems. These two articles by [Hugo Giraudel](http://www.sitepoint.com/avoid-sass-extend/) and [Harry Roberts](http://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/) explain them in detail, but the general idea is that they:
 
@@ -192,7 +192,7 @@ This isolates the definition of the breakpoints to a centralised place in the co
 
 The following principles should also be considered.
 
-##### 5.4.1. Media queries inside blocks
+#### 5.4.1. Media queries inside blocks
 
 When approaching front-end design with concepts like BEM and Atomic Design, where components are described as modular and self-contained entities, it makes sense to describe the responsive behaviour within the component definition rather than within a wider rule somewhere else.
 
@@ -243,7 +243,7 @@ This approach promotes visibility, as a developer can instantly see all the stat
 
 Conceptually, it also makes more sense to include the responsive behaviour inside the block declaration — it translates to creating a responsive component, rather than a component that may or may not receive changes at different viewport dimensions.
 
-##### 5.4.2. Component-specific breakpoints are not global
+#### 5.4.2. Component-specific breakpoints are not global
 
 Sometimes components will need to morph at intermediate viewport dimensions that don't correspond to any of the global breakpoints. Simply adding that value to the breakpoints map is an ugly option, because that means polluting a global list of breakpoints with something only applies to a specific component. include-media offers an alternative for that, allowing developers to declare a breakpoint that will only live within the scope of a component.
 
