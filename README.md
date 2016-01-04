@@ -262,6 +262,17 @@ Sometimes components will need to morph at intermediate viewport dimensions that
 }
 ```
 
+#### 5.4.3. `min-width` or `max-width` media queries?
+
+A mobile-first approach typically results in using only `min-width` media queries — one builds the components as they should look on a narrow viewport and then add rules to change the default behaviour as the viewport gets wider. The opposite happens on a desktop-first development.
+
+While mobile-first seems like a reasonable approach these days, Bedrocks does not enforce one or the other. The key principle is that rules inside media queries should **add functionality** and not **reset properties**. If you find yourself writing rules only to undo them immediately after inside a media query, you're adding unnecessary complexity to the stylesheet.
+
+
+[This article](http://www.the-haystack.com/2015/12/23/choosing-between-min-and-max-width/) provides an excellent overview of this issue, and this paragraph sums it perfectly:
+
+> (...) Look at default display of a given element. If you have to override this default for smaller screens, use max-width. If the default is usable on small screens, use min-width, and only when the element needs to deviate from the default. And of course, I recommend letting the content determine where that happens.
+
 ## 6. JavaScript (to do)
 
 - IIFE/Revealing module pattern
