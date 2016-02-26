@@ -14,8 +14,12 @@
 // Global
 // --------------------------------------------------------------
 @import 'global/base';
-@import 'global/global';
+@import 'global/colours';
+@import 'global/grid';
 @import 'global/reset';
+@import 'global/typography';
+
+@import 'global/global';
 
 // --------------------------------------------------------------
 // Atoms
